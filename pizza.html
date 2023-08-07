@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="pizza.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="row-1 row">
+                <div class="logo">
+                    <a href="index.html">PIZZA <i class="fa-solid fa-pizza-slice"></i></a>
+                </div>
+                <div class="delivery">
+                    <div class="order">
+                        <div class="order-item">
+                            <i class="fa-solid fa-truck"></i>
+                            <span>Đặt giao hàng</span>
+                        </div>
+                        <div class="order-item">
+                            <i class="fa-solid fa-store"></i>
+                            <span>Đặt đến lấy</span>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="Nhập địa chỉ của bạn">
+                    </div>
+                </div>
+                <div class="user">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <a href="login.html">Đăng nhập</a>
+                    <p>/</p>
+                    <a href="login.html">Tạo tài khoản</a>
+                    <p> | </p>
+                    <a href="#">EN</a>
+                </div>
+            </div>
+            <div class="row-2 row">
+                <div class="menu-link">
+                    <a href="#">Khuyến mãi</a>
+                    <a href="pizza.html">Pizza</a>
+                    <a href="pizza.html#drink">Thức uống</a>
+                    <a href="#">Salad</a>
+                    <a href="#">Gà giòn</a>
+                    <a href="#">Combo</a>
+                </div>
+                <div class="carts">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="cart">
+                        <span><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</span>
+                        <div class="cout">
+                            <span id="count">0</span>
+                        </div>
+                    </div>
+                    <div class="cart-show">
+                        <div class="div"></div>
+                        <div class="list-product">
+                            
+                            
+                            
+                        </div>
+                        <div class="check-cart">
+                            <div class="total-money">
+                                <div>Tổng tiền: </div><span id="tong">0</span>
+                            </div>
+                            <div class="btn-buy-product">
+                                <button class="buy">Xem giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="wrapper">
+        
+        <div class="container-products">
+            <div class="pizza">
+                <div class="popular">
+                    <span>Pizza</span>
+                    <div class="container">
+                        <div class="product">
+                            <div class="img-product">
+                                <img src="images/pizza1.webp" alt="">
+                            </div>
+                            <div class="name-product">
+                                Pizza Hải Sản Tom Yum
+                            </div>
+                            <div class="direct">
+                                <div class="price">
+                                    <span>Giá chỉ từ</span>
+                                    <span id="price">69.000đ</span>
+                                </div>
+                                <div class="buynow">
+                                    <a href="pizza-1.html">Mua ngay <i class="fa-solid fa-arrow-right"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="img-product">
+                                <img src="images/pizza2.webp" alt="">
+                            </div>
+                            <div class="name-product">
+                                Pizza Hải Sản Pesto
+                            </div>
+                            <div class="direct">
+                                <div class="price">
+                                    <span>Giá chỉ từ</span>
+                                    <span id="price">69.000đ</span>
+                                </div>
+                                <div class="buynow">
+                                    <a href="pizza-2.html">Mua ngay <i class="fa-solid fa-arrow-right"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="img-product">
+                                <img src="images/pizza3.webp" alt="">
+                            </div>
+                            <div class="name-product">
+                                Pizza Gà Cay
+                            </div>
+                            <div class="direct">
+                                <div class="price">
+                                    <span>Giá chỉ từ</span>
+                                    <span id="price">69.000đ</span>
+                                </div>
+                                <div class="buynow">
+                                    <a href="pizza-3.html">Mua ngay <i class="fa-solid fa-arrow-right"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="img-product">
+                                <img src="images/pizza4.webp" alt="">
+                            </div>
+                            <div class="name-product">
+                                Pizza 4 Season
+                            </div>
+                            <div class="direct">
+                                <div class="price">
+                                    <span>Giá chỉ từ</span>
+                                    <span id="price">69.000đ</span>
+                                </div>
+                                <div class="buynow">
+                                    <a href="pizza-4.html">Mua ngay <i class="fa-solid fa-arrow-right"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="img-product">
+                                <img src="images/pizza5.webp" alt="">
+                            </div>
+                            <div class="name-product">
+                                Pizza Nấm Xốt Pesto
+                            </div>
+                            <div class="direct">
+                                <div class="price">
+                                    <span>Giá chỉ từ</span>
+                                    <span id="price">69.000đ</span>
+                                </div>
+                                <div class="buynow">
+                                    <a href="pizza-5.html">Mua ngay <i class="fa-solid fa-arrow-right"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="img-product">
+                                <img src="images/pizza6.webp" alt="">
+                            </div>
+                            <div class="name-product">
+                                Pizza Gà Xốt Teriyaki
+                            </div>
+                            <div class="direct">
+                                <div class="price">
+                                    <span>Giá chỉ từ</span>
+                                    <span id="price">69.000đ</span>
+                                </div>
+                                <div class="buynow">
+                                    <a href="pizza-6.html">Mua ngay <i class="fa-solid fa-arrow-right"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="img-product">
+                                <img src="images/pizza7.webp" alt="">
+                            </div>
+                            <div class="name-product">
+                                Pizza Cá Hồi Pesto
+                            </div>
+                            <div class="direct">
+                                <div class="price">
+                                    <span>Giá chỉ từ</span>
+                                    <span id="price">69.000đ</span>
+                                </div>
+                                <div class="buynow">
+                                    <a href="pizza-7.html">Mua ngay <i class="fa-solid fa-arrow-right"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="img-product">
+                                <img src="images/pizza4.webp" alt="">
+                            </div>
+                            <div class="name-product">
+                                Pizza 4 Season
+                            </div>
+                            <div class="direct">
+                                <div class="price">
+                                    <span>Giá chỉ từ</span>
+                                    <span id="price">69.000đ</span>
+                                </div>
+                                <div class="buynow">
+                                    <a href="pizza-4.html">Mua ngay <i class="fa-solid fa-arrow-right"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="drink" id="drink">
+                <div class="popular">
+                    <span>Thức uống</span>
+                    <div class="container">
+                        <div class="product">
+                            <div class="img-product">
+                                <img src="images/pepsi.jpg" alt="">
+                            </div>
+                            <div class="name-product">
+                                Pepsi Lon
+                            </div>
+                            <div class="direct">
+                                <div class="price">
+                                    <span>Giá chỉ từ</span>
+                                    <span id="price">15.000đ</span>
+                                </div>
+                                <div class="buynow">
+                                    <a href="pepsi.html">Mua ngay <i class="fa-solid fa-arrow-right"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="img-product">
+                                <img src="images/sevenup.jpg" alt="">
+                            </div>
+                            <div class="name-product">
+                                7 Up Lon
+                            </div>
+                            <div class="direct">
+                                <div class="price">
+                                    <span>Giá chỉ từ</span>
+                                    <span id="price">139.000đ</span>
+                                </div>
+                                <div class="buynow">
+                                    <a href="#">Mua ngay <i class="fa-solid fa-arrow-right"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="img-product">
+                                <img src="images/xaxi.jpg" alt="">
+                            </div>
+                            <div class="name-product">
+                                Mirinda Xá Xị Lon
+                            </div>
+                            <div class="direct">
+                                <div class="price">
+                                    <span>Giá chỉ từ</span>
+                                    <span id="price">139.000đ</span>
+                                </div>
+                                <div class="buynow">
+                                    <a href="#">Mua ngay <i class="fa-solid fa-arrow-right"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="img-product">
+                                <img src="images/aquafina.jpg" alt="">
+                            </div>
+                            <div class="name-product">
+                                Nước Suối Lạnh
+                            </div>
+                            <div class="direct">
+                                <div class="price">
+                                    <span>Giá chỉ từ</span>
+                                    <span id="price">139.000đ</span>
+                                </div>
+                                <div class="buynow">
+                                    <a href="#">Mua ngay <i class="fa-solid fa-arrow-right"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+        
+        </div>
+        <!-- <header>
+            <div class="slide-show">
+                <img src="images/0003376_TPC_NYC_2022.jpeg" alt="">
+            </div>
+        </header> -->
+        
+        
+      
+    </div>
+    
+    <footer>
+        <div class="row">
+            <div class="logo">
+                <a href="index.html">PIZZA <i class="fa-solid fa-pizza-slice"></i></a>
+            </div>
+            <div class="connect">
+                <a href="#">Kết nối PIZZA tại Việt Nam</a>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hotline">
+                <span><i class="fa-solid fa-phone"></i> Hotline Đặt Hàng</span>
+                <div class="phonenumber">0336078026</div>
+            </div>
+            <div class="link">
+                <a href="#">Danh sách cửa hàng</a>
+                <a href="#">Blog</a>
+                <a href="#">Tuyển dụng</a>
+            </div>
+            <div class="link">
+                <a href="#">Thực đơn</a>
+                <a href="#">Khuyến mãi</a>
+                
+            </div>
+            <div class="link">
+                <a href="#">Theo dõi đơn hàng</a>
+                <a href="#">Ưu đãi thành viên</a>
+                <a href="#">Liên hệ</a>
+            </div>
+            <div class="check">
+                <img src="images/bocongthuong.png" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            Bản quyền © 2023 Pizza. Đã đăng ký bản quyền.
+        </div>
+    </footer>
+</body>
+
+<script src="product.js"></script>
+</html>
